@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- ビューポートの設定1 -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- スタイルシートの読み込み -->
+<link href="./css/style.css" rel="stylesheet">
+<link href="./css/layout.css" rel="stylesheet">
+<link href="./css/side_navigation.css" rel="stylesheet">
+<link href="./css/responsive.css" rel="stylesheet">  
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="./js/global_navigation.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SideNavigation02</title>
+</head>
+
+<body>
+
+<header id="header">
+
+	<div class="inner">
+    
+    <div id="toggle-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <p>メニュー</p>
+    </div>
+      
+    <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+  
+  
+  
+<div id="SideNavigationParent">
+<a href="#">Parent</a>
+</div>
+
+
+  
+</header>
+
+<div id="wrapper">
+
+
+
+
+
+<label class="toggle" for="open"><i class="fa fa-bars" aria-hidden="true"></i>
+</label>
+<input id="open" type="checkbox">
+
+<div id="menu" class="open">
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">BLOG</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+<div id="SideNavigationParent01" class="open">
+<a href="#">Parent</a>
+</div>
+
+
+
+<div class="content">
+<p>通常の縦並びドロップダウンメニューです。メニュー部分にマウスオーバーするとコンテンツの上に子メニューが展開します。</p>
+<p>子孫メニューの制御ははoverflowで行っております。displayでの制御も可能ですが、その場合はcontentプロパティで表示している▶矢印は見えなくなります。</p>
+</div>
+
+</div>
+
+
+
+</div><!-- /wrapper -->
+
+<div id="footer">
+
+<div class="inner">
+footer
+</div>
+
+</div><!-- /footer -->
+
+</body>
+</html>
