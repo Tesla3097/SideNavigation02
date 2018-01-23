@@ -73,9 +73,9 @@
   overflow: auto;
   width: 300px;
   height: 100%;
-  padding: 20px;
+	border-right: #CCC solid 1px;
   transition: left .5s, right .5s;
-  background-color: rgba(86, 86, 86, .7);
+  background-color: rgba(245, 245, 245, .9);
 }
 
 .open #SideNavigation {
@@ -87,6 +87,7 @@
 }
 
 #SideNavigation ul li {
+	padding: 0 10px;
 }
 
 #SideNavigation ul li a {
@@ -95,11 +96,66 @@
 }
 
 
+/*----------------------------------------
+ Accordion
+-----------------------------------------*/
 
+.accordion p {
+	padding: 0;
+}
 
+.accordion a {
+	display: block;
+	padding: 5px 10px;
+}
 
+.accordion a:hover {
+	background-color: #E6E6E6;
+}
 
-		
-		
+.accordion input {
+	display: none;
+}
 
+.accordion label {
+	position: relative;
+	display: block;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
 
+.accordion label:after {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	display: block;
+	content: '';
+	width: 8px;
+	height: 8px;
+	margin-top: -7px;
+	border-top: 1px solid #888;
+	border-right: 1px solid #888;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+	transition: all .3s ease-in-out;
+}
+
+.accordion div {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: height .5s ease-in-out;
+}
+
+.accordion input:checked + label:after {
+	margin-top: -3px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.accordion input:checked ~ div {
+	height: 100%;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+}

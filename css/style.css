@@ -30,6 +30,10 @@ p {
 	line-height: 1.8em;
 }
 
+a {
+	text-decoration: none
+}
+
 @keyframes fadeIn {
 	0% {opacity: 0}
 	100% {opacity: 1}
