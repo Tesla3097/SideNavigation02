@@ -67,7 +67,8 @@
 -----------------------------------------*/
 
 #SideNavigation {
-  position: fixed; 
+  position: fixed;
+	padding: 0 0 93px 0;
   top: 60px;
   left: -340px;
   overflow: auto;
@@ -76,6 +77,13 @@
 	border-right: #CCC solid 1px;
   transition: left .5s, right .5s;
   background-color: rgba(245, 245, 245, .9);
+	
+}
+
+#SideNavigation:after {
+	content: "";
+	clear: both;
+	display: block;
 }
 
 .open #SideNavigation {
